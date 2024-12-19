@@ -1,7 +1,5 @@
 #include "../include/memory.h"
 
-// 16bit address buss used to access ROM, RAM and I/O 
-uint16_t addr = {0};
 
 // FFFF is the interupt register
 uint8_t IE_register = {0};
@@ -49,4 +47,19 @@ uint8_t IO_regs[128] = {0};
 // High RAM
 // FF80 -> FFFE
 uint8_t h_ram[127] = {0};
+
+
+void memWrite(uint8_t data) 
+{
+	//TODO:
+	return;
+}
+
+uint8_t memRead(uint16_t addr)
+{
+	//TODO:
+	return 0;
+}
+
+
 
